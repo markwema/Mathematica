@@ -1,0 +1,222 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 8.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       157,          7]
+NotebookDataLength[      7704,        213]
+NotebookOptionsPosition[      6945,        179]
+NotebookOutlinePosition[      7328,        196]
+CellTagsIndexPosition[      7285,        193]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["Useful Functions", "Title",
+ CellChangeTimes->{{3.5091384058103437`*^9, 3.5091384077100983`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell["Squash Functions", "Section",
+ CellChangeTimes->{{3.509138426089767*^9, 3.5091384287350607`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell["Sigmoid Function", "Subsection",
+ CellChangeTimes->{{3.509208067185862*^9, 3.509208071215083*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Manipulate", "[", 
+  RowBox[{
+   RowBox[{"Plot", "[", 
+    RowBox[{
+     RowBox[{"1", "/", 
+      RowBox[{"(", 
+       RowBox[{"1", "+", 
+        SuperscriptBox["E", 
+         RowBox[{
+          RowBox[{"-", "n"}], "*", "x"}]]}], ")"}]}], ",", 
+     RowBox[{"{", 
+      RowBox[{"x", ",", 
+       RowBox[{"-", "6"}], ",", "6"}], "}"}]}], "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"n", ",", "1"}], "}"}], ",", "0.1", ",", "10"}], "}"}], ",", 
+   RowBox[{"{", "n", "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.508347939357644*^9, 3.5083480007298727`*^9}, {
+  3.5083480402994432`*^9, 3.508348269095909*^9}, {3.5091384611487207`*^9, 
+  3.509138517628456*^9}, {3.509138666394905*^9, 3.509138667973392*^9}, {
+  3.5091387129741917`*^9, 3.509138714581843*^9}, {3.509138893168378*^9, 
+  3.509138897129051*^9}, {3.5091389355925617`*^9, 3.5091389517742558`*^9}, {
+  3.50913903650198*^9, 3.50913905293003*^9}, {3.509139144061575*^9, 
+  3.509139225710536*^9}, {3.509139340402061*^9, 3.509139342997834*^9}, {
+  3.5091394063268957`*^9, 3.509139490581888*^9}, {3.509139522507312*^9, 
+  3.509139682603882*^9}, {3.509207719616322*^9, 3.509207719772851*^9}}],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{Cell$$28621`n$$ = 4.88, Typeset`show$$ = True, 
+    Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
+    Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
+    "\"untitled\"", Typeset`specs$$ = {{{
+       Hold[Cell$$28621`n$$], 1}, 0.1, 10}, {
+      Hold[Cell$$28621`n$$]}}, Typeset`size$$ = {360., {114., 119.}}, 
+    Typeset`update$$ = 0, Typeset`initDone$$, Typeset`skipInitDone$$ = True, 
+    Cell$$28621`n$99157$$ = 0}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, "Variables" :> {Cell$$28621`n$$ = 1}, 
+      "ControllerVariables" :> {
+        Hold[Cell$$28621`n$$, Cell$$28621`n$99157$$, 0]}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, "Body" :> 
+      Plot[1/(1 + E^((-Cell$$28621`n$$) Cell$$28621`x)), {
+        Cell$$28621`x, -6, 6}], 
+      "Specifications" :> {{{Cell$$28621`n$$, 1}, 0.1, 10}, {
+        Cell$$28621`n$$}}, "Options" :> {}, "DefaultOptions" :> {}],
+     ImageSizeCache->{403., {168., 174.}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    SynchronousInitialization->True,
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellChangeTimes->{{3.508347994689083*^9, 3.5083480010667*^9}, {
+   3.508348094061936*^9, 3.5083482697390547`*^9}, {3.509138463836584*^9, 
+   3.5091384917523823`*^9}, 3.509138715479476*^9, 3.5091388984700203`*^9, {
+   3.5091389393392878`*^9, 3.509138952433914*^9}, {3.50913904386094*^9, 
+   3.509139055799096*^9}, {3.5091391685084133`*^9, 3.509139226455676*^9}, 
+   3.509139343832818*^9, {3.509139410636278*^9, 3.5091394915241547`*^9}, {
+   3.509139526128976*^9, 3.509139558777437*^9}, {3.509139589967514*^9, 
+   3.5091396839726152`*^9}, 3.509207720604829*^9}]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Hyperbolic Tangent Function", "Subsection",
+ CellChangeTimes->{{3.509208044441935*^9, 3.509208074303185*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Manipulate", "[", 
+  RowBox[{
+   RowBox[{"Plot", "[", 
+    RowBox[{
+     RowBox[{"Tanh", "[", 
+      RowBox[{"n", "*", "x"}], "]"}], ",", " ", 
+     RowBox[{"{", 
+      RowBox[{"x", ",", " ", 
+       RowBox[{"-", "6"}], ",", " ", "6"}], "}"}]}], "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"n", ",", "1"}], "}"}], ",", "0.1", ",", "10"}], "}"}], ",", 
+   " ", 
+   RowBox[{"{", "n", "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.508348704408236*^9, 3.508348720058707*^9}, {
+  3.50913925160425*^9, 3.509139271766213*^9}, {3.509139330857234*^9, 
+  3.509139332156684*^9}, {3.5091396932869387`*^9, 3.5091397042271423`*^9}}],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{Cell$$28621`n$$ = 0.52, Typeset`show$$ = True, 
+    Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
+    Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
+    "\"untitled\"", Typeset`specs$$ = {{{
+       Hold[Cell$$28621`n$$], 1}, 0.1, 10}, {
+      Hold[Cell$$28621`n$$]}}, Typeset`size$$ = {360., {111., 115.}}, 
+    Typeset`update$$ = 0, Typeset`initDone$$, Typeset`skipInitDone$$ = True, 
+    Cell$$28621`n$25433$$ = 0}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, "Variables" :> {Cell$$28621`n$$ = 1}, 
+      "ControllerVariables" :> {
+        Hold[Cell$$28621`n$$, Cell$$28621`n$25433$$, 0]}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, "Body" :> Plot[
+        Tanh[Cell$$28621`n$$ Cell$$28621`x], {Cell$$28621`x, -6, 6}], 
+      "Specifications" :> {{{Cell$$28621`n$$, 1}, 0.1, 10}, {
+        Cell$$28621`n$$}}, "Options" :> {}, "DefaultOptions" :> {}],
+     ImageSizeCache->{403., {164., 170.}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    SynchronousInitialization->True,
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellChangeTimes->{{3.5083487143520117`*^9, 3.5083487206847754`*^9}, {
+   3.509139263925046*^9, 3.509139272381227*^9}, 3.509139332870878*^9, 
+   3.509139704894779*^9}]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{740, 756},
+WindowMargins->{{46, Automatic}, {Automatic, 38}},
+CellLabelAutoDelete->True,
+FrontEndVersion->"8.0 for Mac OS X x86 (32-bit, 64-bit Kernel) (November 6, \
+2010)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[579, 22, 103, 1, 76, "Title"],
+Cell[CellGroupData[{
+Cell[707, 27, 103, 1, 67, "Section"],
+Cell[CellGroupData[{
+Cell[835, 32, 104, 1, 35, "Subsection"],
+Cell[CellGroupData[{
+Cell[964, 37, 1199, 27, 34, "Input"],
+Cell[2166, 66, 2134, 41, 359, "Output"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[4349, 113, 115, 1, 35, "Subsection"],
+Cell[CellGroupData[{
+Cell[4489, 118, 676, 18, 27, "Input"],
+Cell[5168, 138, 1725, 35, 351, "Output"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
